@@ -53,30 +53,68 @@ body {
 	
 <!-- Navbar -->
 
+
+
+
+<style>
+/* Estilos CSS para el botón del menú desplegable */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos CSS para el menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilos CSS para los elementos del menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Estilos CSS para los elementos del menú desplegable cuando el usuario pasa el cursor sobre ellos */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mostrar el menú desplegable cuando el usuario pasa el cursor sobre el botón */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos CSS para el menú desplegable cuando está abierto */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+<h2>Menú desplegable personalizado</h2>
+<p>Haga clic en el botón para abrir el menú desplegable.</p>
+
 <div class="dropdown">
-        <a href="#">Menú desplegable</a>
-        <div class="dropdown-content">
-             <a href="#">  Opción 2  </a>
-            <a href="#">   Opción 2  </a>
-             <a href="#">   Opción 2  </a>
-        </div>
-    </div>
-   
-	  <style>
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+  <button class="dropbtn">Menú desplegable</button>
+  <div class="dropdown-content">
+    <a href="#">Opción 1</a>
+    <a href="#">Opción 2</a>
+    <a href="#">Opción 3</a>
+  </div>
+</div>
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            z-index: 1;
-        }
+<script>
+// Agregue cualquier código JavaScript aquí si es necesario
+</script>
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+
 
 	.menu {
       list-style: none;
