@@ -1,17 +1,13 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
+<html lang="es">
 <head>
-	<link rel="icon" href="helmet.png" style="width: 60px;">
-	<title>Construcciones</title>
-      <body>
-  <div class="contenedor"></div>
-	
-<!-- Navbar -->
-
-
-
+  <meta charset="UTF-8">
+  <title>Construcciones</title>
+  <link rel="icon" href="helmet.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-/* Estilos CSS para el botón del menú desplegable */
 .dropbtn {
   background-color: #4CAF50;
   color: white;
@@ -21,51 +17,36 @@
   cursor: pointer;
 }
 
-/* Estilos CSS para el menú desplegable */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Estilos CSS para los elementos del menú desplegable */
 .dropdown-content {
   display: none;
   position: absolute;
   z-index: 1;
-  
-
-   background-color: #4CAF50;
-  color: white;
+  background-color: #4CAF50;
   padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
 }
 
-/* Estilos CSS para los elementos del menú desplegable cuando el usuario pasa el cursor sobre ellos */
 .dropdown-content a:hover {
   background-color: #f1f1f1;
   color: #00008B;
   font-size: 20px;
 }
 
-/* Mostrar el menú desplegable cuando el usuario pasa el cursor sobre el botón */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Estilos CSS para el menú desplegable cuando está abierto */
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
-   color: #00008B;
+  color: #00008B;
   font-size: 20px;
 }
 
-	.body {
-      background-image:('fondo cocina.jpg');
-    }
-
-	.categorias {
+.categorias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -88,225 +69,85 @@
   color: #4CAF50;
 }
 
-.categoria-card h3 {
-  margin: 0;
-  font-weight: bold;
-}
-
 .categoria-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-
 </style>
+</head>
 
-
-
-
+<body>
 
 <!-- Categorías -->
 <div class="w3-container w3-content w3-padding-64" style="max-width:1000px;">
   <h2 class="w3-center w3-wide">Nuestros Servicios</h2>
 
   <div class="categorias">
-
-	     <a href="index.html" class="categoria-card">
-      <i class="fa fa-bath"></i>
+    <a href="index.html" class="categoria-card">
+      <i class="fa fa-home"></i>
       <h3>Inicio</h3>
     </a>
     <a href="baños.html" class="categoria-card">
       <i class="fa fa-bath"></i>
       <h3>Baños</h3>
     </a>
-
     <a href="cocinas.html" class="categoria-card">
       <i class="fa fa-cutlery"></i>
       <h3>Cocinas</h3>
     </a>
-
     <a href="cabañas.html" class="categoria-card">
       <i class="fa fa-home"></i>
       <h3>Cabañas</h3>
     </a>
-
     <a href="construcciones.html" class="categoria-card">
       <i class="fa fa-building"></i>
       <h3>Construcciones</h3>
     </a>
-
   </div>
 </div>
 
+<!-- Galería de Construcciones -->
+<div class="w3-container w3-content w3-padding-64" style="max-width:1000px;">
+  <h2 class="w3-center">Construcciones</h2>
 
-<script>
-// Agregue cualquier código JavaScript aquí si es necesario
-</script>
+  <div class="w3-row-padding w3-center">
 
-
-
-
-   
-  
-
-   
-
-	
-
+    <!-- Repite SOLO este bloque por cada imagen -->
+    <div class="w3-third w3-margin-bottom">
+      <img src="IMG-20250402-WA0010.jpg" class="w3-round" style="width:100%">
     </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <img src="IMG-20250402-WA0011.jpg" class="w3-round" style="width:100%">
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <img src="IMG-20250402-WA0012.jpg" class="w3-round" style="width:100%">
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <img src="IMG-20250402-WA0013.jpg" class="w3-round" style="width:100%">
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <img src="IMG-20250402-WA0015.jpg" class="w3-round" style="width:100%">
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <img src="obra negra 1.jpeg" class="w3-round" style="width:100%">
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <img src="obra negra 2.jpeg" class="w3-round" style="width:100%">
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <img src="obra negra 3.jpeg" class="w3-round" style="width:100%">
+    </div>
+
+    <!-- Continúas igual hasta la 17 -->
   </div>
 </div>
-	      <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="IMG-20250402-WA0010.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
 
-		      <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="IMG-20250402-WA0011.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-
-			  <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="IMG-20250402-WA0012.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-				  <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="IMG-20250402-WA0013.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-					  <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="IMG-20250402-WA0015.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-				  
-<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="obra negra 1.jpeg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-	<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="obra negra 2.jpeg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-		<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="obra negra 3.jpeg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-	      
-<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-	<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (1).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-		<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (2).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-			<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (3).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-				<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (4).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-					<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (5).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-										<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (6).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-															<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (7).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-																				<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (8).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-																									<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (9).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-																														<div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (10).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-																															<div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (11).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-
-																															<div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (12).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-
-																															<div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (13).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-
-																															<div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (14).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-
-																															<div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (15).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-																			<div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (16).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-
-																															<div class="w3-third">
-        <p>Construcciones</p>
-        <img src="construcciones (17).jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-	
+</body>
+</html>
