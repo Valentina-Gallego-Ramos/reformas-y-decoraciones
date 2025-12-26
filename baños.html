@@ -86,22 +86,75 @@
       font-size: 20px;
       font-family: "Dancing Script",cursive;
     }
+
+	.categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.categoria-card {
+  background: #f5f5f5;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoria-card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #4CAF50;
+}
+
+.categoria-card h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.categoria-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
 </style>
 
 
 
 
 
-<div class="dropdown">
-  <button class="dropbtn">Menú</button>
-  <div class="dropdown-content">
-     <a href="index.html">◉Inicio</a>
-    <a href="baños.html">◉Baños</a>
-    <a href="cocinas.html">◉Cocinas</a>
-    <a href="cabañas.html">◉Cabañas</a>
-    <a href="construcciones.html">◉Construcciones</a>
+<!-- Categorías -->
+<div class="w3-container w3-content w3-padding-64" style="max-width:1000px;">
+  <h2 class="w3-center w3-wide">Nuestros Servicios</h2>
+
+  <div class="categorias">
+
+    <a href="baños.html" class="categoria-card">
+      <i class="fa fa-bath"></i>
+      <h3>Baños</h3>
+    </a>
+
+    <a href="cocinas.html" class="categoria-card">
+      <i class="fa fa-cutlery"></i>
+      <h3>Cocinas</h3>
+    </a>
+
+    <a href="cabañas.html" class="categoria-card">
+      <i class="fa fa-home"></i>
+      <h3>Cabañas</h3>
+    </a>
+
+    <a href="construcciones.html" class="categoria-card">
+      <i class="fa fa-building"></i>
+      <h3>Construcciones</h3>
+    </a>
+
   </div>
 </div>
+
 
 <script>
 // Agregue cualquier código JavaScript aquí si es necesario
